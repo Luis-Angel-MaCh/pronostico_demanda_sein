@@ -1,0 +1,466 @@
+{
+  "model": "LDS residual directo v1.1",
+  "generatedAt": "2026-10-27T11:04:05-05:00",
+  "trainedThrough": "2026-10-27T11:00",
+  "trainingRows": 49462,
+  "validation": {
+    "12": {
+      "hours": 6.0,
+      "samples": 123,
+      "maeModel": 99.43903783944238,
+      "maeDaily": 132.06481975609765,
+      "rmseModel": 129.14212256745373,
+      "improvementPct": 24.704370154678447
+    },
+    "24": {
+      "hours": 12.0,
+      "samples": 132,
+      "maeModel": 124.13656903094758,
+      "maeDaily": 138.3428868181819,
+      "rmseModel": 158.87071119208156,
+      "improvementPct": 10.268918130864998
+    },
+    "48": {
+      "hours": 24.0,
+      "samples": 140,
+      "maeModel": 135.05435067460496,
+      "maeDaily": 132.92121128571438,
+      "rmseModel": 167.56058313882357,
+      "improvementPct": -1.6048148886526443
+    }
+  },
+  "forecast": [
+    {
+      "time": "2026-10-27T11:30",
+      "horizonSteps": 1,
+      "prediction": 8317.733799434765,
+      "rdoCalibrated": 8337.748466664478,
+      "rdoAdvanced": 8306.614871759184,
+      "lower": 8105.940718424141,
+      "upper": 8529.52688044539
+    },
+    {
+      "time": "2026-10-27T12:00",
+      "horizonSteps": 2,
+      "prediction": 8325.41351095227,
+      "rdoCalibrated": 8355.276915302877,
+      "rdoAdvanced": 8352.328048756619,
+      "lower": 8113.620429941646,
+      "upper": 8537.206591962895
+    },
+    {
+      "time": "2026-10-27T12:30",
+      "horizonSteps": 3,
+      "prediction": 8237.313097326645,
+      "rdoCalibrated": 8257.90363370982,
+      "rdoAdvanced": 8268.494612299608,
+      "lower": 8025.520016316021,
+      "upper": 8449.10617833727
+    },
+    {
+      "time": "2026-10-27T13:00",
+      "horizonSteps": 4,
+      "prediction": 8210.437432971083,
+      "rdoCalibrated": 8215.45164316149,
+      "rdoAdvanced": 8227.902641610508,
+      "lower": 7998.644351960458,
+      "upper": 8422.230513981707
+    },
+    {
+      "time": "2026-10-27T13:30",
+      "horizonSteps": 5,
+      "prediction": 8193.118539573898,
+      "rdoCalibrated": 8189.663776217016,
+      "rdoAdvanced": 8234.263110443319,
+      "lower": 7981.325458563273,
+      "upper": 8404.911620584522
+    },
+    {
+      "time": "2026-10-27T14:00",
+      "horizonSteps": 6,
+      "prediction": 8217.724711081783,
+      "rdoCalibrated": 8271.92080414503,
+      "rdoAdvanced": 8303.344425673837,
+      "lower": 8005.931630071158,
+      "upper": 8429.517792092407
+    },
+    {
+      "time": "2026-10-27T14:30",
+      "horizonSteps": 7,
+      "prediction": 8361.821383062314,
+      "rdoCalibrated": null,
+      "rdoAdvanced": 8451.02798239649,
+      "lower": 8150.028302051689,
+      "upper": 8573.614464072938
+    },
+    {
+      "time": "2026-10-27T15:00",
+      "horizonSteps": 8,
+      "prediction": 8374.430457341587,
+      "rdoCalibrated": null,
+      "rdoAdvanced": 8473.101276802628,
+      "lower": 8162.637376330962,
+      "upper": 8586.223538352211
+    },
+    {
+      "time": "2026-10-27T15:30",
+      "horizonSteps": 9,
+      "prediction": 8393.615933928702,
+      "rdoCalibrated": null,
+      "rdoAdvanced": 8477.379352166221,
+      "lower": 8181.822852918078,
+      "upper": 8605.409014939327
+    },
+    {
+      "time": "2026-10-27T16:00",
+      "horizonSteps": 10,
+      "prediction": 8395.73195197287,
+      "rdoCalibrated": null,
+      "rdoAdvanced": 8474.589495514996,
+      "lower": 8183.938870962245,
+      "upper": 8607.525032983494
+    },
+    {
+      "time": "2026-10-27T16:30",
+      "horizonSteps": 11,
+      "prediction": 8357.859869119362,
+      "rdoCalibrated": null,
+      "rdoAdvanced": 8427.0690444005,
+      "lower": 8146.0667881087375,
+      "upper": 8569.652950129986
+    },
+    {
+      "time": "2026-10-27T17:00",
+      "horizonSteps": 12,
+      "prediction": 8354.588125481569,
+      "rdoCalibrated": null,
+      "rdoAdvanced": 8414.447960341946,
+      "lower": 8142.795044470944,
+      "upper": 8566.381206492193
+    },
+    {
+      "time": "2026-10-27T17:30",
+      "horizonSteps": 13,
+      "prediction": 8284.468477863446,
+      "rdoCalibrated": null,
+      "rdoAdvanced": 8379.357692673602,
+      "lower": 8072.675396852821,
+      "upper": 8496.26155887407
+    },
+    {
+      "time": "2026-10-27T18:00",
+      "horizonSteps": 14,
+      "prediction": 8234.281854340412,
+      "rdoCalibrated": null,
+      "rdoAdvanced": 8274.836106729326,
+      "lower": 8022.488773329787,
+      "upper": 8446.074935351036
+    },
+    {
+      "time": "2026-10-27T18:30",
+      "horizonSteps": 15,
+      "prediction": 8338.317784514298,
+      "rdoCalibrated": null,
+      "rdoAdvanced": 8398.346294649098,
+      "lower": 8126.524703503674,
+      "upper": 8550.110865524923
+    },
+    {
+      "time": "2026-10-27T19:00",
+      "horizonSteps": 16,
+      "prediction": 8341.182169577443,
+      "rdoCalibrated": null,
+      "rdoAdvanced": 8415.781992838576,
+      "lower": 8129.389088566819,
+      "upper": 8552.975250588068
+    },
+    {
+      "time": "2026-10-27T19:30",
+      "horizonSteps": 17,
+      "prediction": 8335.740957873759,
+      "rdoCalibrated": null,
+      "rdoAdvanced": 8406.688074855716,
+      "lower": 8123.947876863134,
+      "upper": 8547.534038884383
+    },
+    {
+      "time": "2026-10-27T20:00",
+      "horizonSteps": 18,
+      "prediction": 8326.53938412374,
+      "rdoCalibrated": null,
+      "rdoAdvanced": 8397.793489564277,
+      "lower": 8114.746303113116,
+      "upper": 8538.332465134365
+    },
+    {
+      "time": "2026-10-27T20:30",
+      "horizonSteps": 19,
+      "prediction": 8294.418853616804,
+      "rdoCalibrated": null,
+      "rdoAdvanced": 8355.942109031528,
+      "lower": 8033.87088726179,
+      "upper": 8554.966819971818
+    },
+    {
+      "time": "2026-10-27T21:00",
+      "horizonSteps": 20,
+      "prediction": 8272.285585271633,
+      "rdoCalibrated": null,
+      "rdoAdvanced": 8328.583755241385,
+      "lower": 8011.737618916619,
+      "upper": 8532.833551626647
+    },
+    {
+      "time": "2026-10-27T21:30",
+      "horizonSteps": 21,
+      "prediction": 8179.108198922948,
+      "rdoCalibrated": null,
+      "rdoAdvanced": 8212.486388144423,
+      "lower": 7918.560232567934,
+      "upper": 8439.656165277962
+    },
+    {
+      "time": "2026-10-27T22:00",
+      "horizonSteps": 22,
+      "prediction": 8098.935845332159,
+      "rdoCalibrated": null,
+      "rdoAdvanced": 8119.105534323585,
+      "lower": 7838.387878977145,
+      "upper": 8359.483811687172
+    },
+    {
+      "time": "2026-10-27T22:30",
+      "horizonSteps": 23,
+      "prediction": 7921.8386858988715,
+      "rdoCalibrated": null,
+      "rdoAdvanced": 7953.9961040637045,
+      "lower": 7661.290719543857,
+      "upper": 8182.386652253886
+    },
+    {
+      "time": "2026-10-27T23:00",
+      "horizonSteps": 24,
+      "prediction": 7782.887882707456,
+      "rdoCalibrated": null,
+      "rdoAdvanced": 7793.144090143771,
+      "lower": 7522.339916352442,
+      "upper": 8043.43584906247
+    },
+    {
+      "time": "2026-10-27T23:30",
+      "horizonSteps": 25,
+      "prediction": 7548.007484289652,
+      "rdoCalibrated": null,
+      "rdoAdvanced": 7576.06982856428,
+      "lower": 7287.459517934638,
+      "upper": 7808.555450644666
+    },
+    {
+      "time": "2026-10-28T00:00",
+      "horizonSteps": 26,
+      "prediction": 7414.35625351355,
+      "rdoCalibrated": null,
+      "rdoAdvanced": 7418.336136858663,
+      "lower": 7153.808287158536,
+      "upper": 7674.904219868564
+    },
+    {
+      "time": "2026-10-28T00:30",
+      "horizonSteps": 27,
+      "prediction": 7085.396739242284,
+      "rdoCalibrated": null,
+      "rdoAdvanced": null,
+      "lower": 6824.84877288727,
+      "upper": 7345.944705597298
+    },
+    {
+      "time": "2026-10-28T01:00",
+      "horizonSteps": 28,
+      "prediction": 7083.624037252105,
+      "rdoCalibrated": null,
+      "rdoAdvanced": null,
+      "lower": 6823.076070897091,
+      "upper": 7344.172003607119
+    },
+    {
+      "time": "2026-10-28T01:30",
+      "horizonSteps": 29,
+      "prediction": 6839.110833350189,
+      "rdoCalibrated": null,
+      "rdoAdvanced": null,
+      "lower": 6578.562866995175,
+      "upper": 7099.658799705203
+    },
+    {
+      "time": "2026-10-28T02:00",
+      "horizonSteps": 30,
+      "prediction": 6836.838067829942,
+      "rdoCalibrated": null,
+      "rdoAdvanced": null,
+      "lower": 6576.290101474928,
+      "upper": 7097.386034184956
+    },
+    {
+      "time": "2026-10-28T02:30",
+      "horizonSteps": 31,
+      "prediction": 6778.62437523621,
+      "rdoCalibrated": null,
+      "rdoAdvanced": null,
+      "lower": 6518.076408881196,
+      "upper": 7039.172341591224
+    },
+    {
+      "time": "2026-10-28T03:00",
+      "horizonSteps": 32,
+      "prediction": 6770.405266794176,
+      "rdoCalibrated": null,
+      "rdoAdvanced": null,
+      "lower": 6509.857300439162,
+      "upper": 7030.95323314919
+    },
+    {
+      "time": "2026-10-28T03:30",
+      "horizonSteps": 33,
+      "prediction": 6738.523660464829,
+      "rdoCalibrated": null,
+      "rdoAdvanced": null,
+      "lower": 6477.975694109815,
+      "upper": 6999.071626819843
+    },
+    {
+      "time": "2026-10-28T04:00",
+      "horizonSteps": 34,
+      "prediction": 6736.3355754169925,
+      "rdoCalibrated": null,
+      "rdoAdvanced": null,
+      "lower": 6475.787609061978,
+      "upper": 6996.8835417720065
+    },
+    {
+      "time": "2026-10-28T04:30",
+      "horizonSteps": 35,
+      "prediction": 6789.567332942668,
+      "rdoCalibrated": null,
+      "rdoAdvanced": null,
+      "lower": 6529.019366587654,
+      "upper": 7050.115299297682
+    },
+    {
+      "time": "2026-10-28T05:00",
+      "horizonSteps": 36,
+      "prediction": 6796.951696119244,
+      "rdoCalibrated": null,
+      "rdoAdvanced": null,
+      "lower": 6536.40372976423,
+      "upper": 7057.499662474258
+    },
+    {
+      "time": "2026-10-28T05:30",
+      "horizonSteps": 37,
+      "prediction": 6923.839831061611,
+      "rdoCalibrated": null,
+      "rdoAdvanced": null,
+      "lower": 6649.040474713941,
+      "upper": 7198.6391874092815
+    },
+    {
+      "time": "2026-10-28T06:00",
+      "horizonSteps": 38,
+      "prediction": 6918.377271273031,
+      "rdoCalibrated": null,
+      "rdoAdvanced": null,
+      "lower": 6643.57791492536,
+      "upper": 7193.176627620701
+    },
+    {
+      "time": "2026-10-28T06:30",
+      "horizonSteps": 39,
+      "prediction": 7028.03348643376,
+      "rdoCalibrated": null,
+      "rdoAdvanced": null,
+      "lower": 6753.23413008609,
+      "upper": 7302.83284278143
+    },
+    {
+      "time": "2026-10-28T07:00",
+      "horizonSteps": 40,
+      "prediction": 7025.051573955634,
+      "rdoCalibrated": null,
+      "rdoAdvanced": null,
+      "lower": 6750.252217607964,
+      "upper": 7299.850930303304
+    },
+    {
+      "time": "2026-10-28T07:30",
+      "horizonSteps": 41,
+      "prediction": 7417.2177422594195,
+      "rdoCalibrated": null,
+      "rdoAdvanced": null,
+      "lower": 7142.418385911749,
+      "upper": 7692.01709860709
+    },
+    {
+      "time": "2026-10-28T08:00",
+      "horizonSteps": 42,
+      "prediction": 7421.14212401223,
+      "rdoCalibrated": null,
+      "rdoAdvanced": null,
+      "lower": 7146.34276766456,
+      "upper": 7695.9414803599
+    },
+    {
+      "time": "2026-10-28T08:30",
+      "horizonSteps": 43,
+      "prediction": 7860.760852294007,
+      "rdoCalibrated": null,
+      "rdoAdvanced": null,
+      "lower": 7585.961495946337,
+      "upper": 8135.5602086416775
+    },
+    {
+      "time": "2026-10-28T09:00",
+      "horizonSteps": 44,
+      "prediction": 7869.970782740074,
+      "rdoCalibrated": null,
+      "rdoAdvanced": null,
+      "lower": 7595.171426392404,
+      "upper": 8144.770139087745
+    },
+    {
+      "time": "2026-10-28T09:30",
+      "horizonSteps": 45,
+      "prediction": 8098.959042891372,
+      "rdoCalibrated": null,
+      "rdoAdvanced": null,
+      "lower": 7824.159686543701,
+      "upper": 8373.758399239043
+    },
+    {
+      "time": "2026-10-28T10:00",
+      "horizonSteps": 46,
+      "prediction": 8113.177509332406,
+      "rdoCalibrated": null,
+      "rdoAdvanced": null,
+      "lower": 7838.378152984736,
+      "upper": 8387.976865680077
+    },
+    {
+      "time": "2026-10-28T10:30",
+      "horizonSteps": 47,
+      "prediction": 8299.533542038844,
+      "rdoCalibrated": null,
+      "rdoAdvanced": null,
+      "lower": 8024.7341856911735,
+      "upper": 8574.332898386514
+    },
+    {
+      "time": "2026-10-28T11:00",
+      "horizonSteps": 48,
+      "prediction": 8310.823067304253,
+      "rdoCalibrated": null,
+      "rdoAdvanced": null,
+      "lower": 8036.023710956582,
+      "upper": 8585.622423651923
+    }
+  ]
+}

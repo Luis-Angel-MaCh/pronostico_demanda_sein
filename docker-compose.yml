@@ -1,0 +1,11 @@
+services:
+  lds:
+    build: .
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+      - ./reports:/app/reports
+    restart: unless-stopped
+

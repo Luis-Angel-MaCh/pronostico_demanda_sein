@@ -1,0 +1,110 @@
+[
+  {
+    "horizonte_h": 6,
+    "modelo": "Ridge residual",
+    "n": 1282,
+    "mae_mw": 83.57637955339749,
+    "rmse_mw": 105.83840642941948,
+    "mape_pct": 1.1113978432094833,
+    "bias_mw": -3.228042890852059
+  },
+  {
+    "horizonte_h": 6,
+    "modelo": "Programacion diaria",
+    "n": 1282,
+    "mae_mw": 95.24536828393136,
+    "rmse_mw": 118.80132917763467,
+    "mape_pct": 1.2659907823262315,
+    "bias_mw": 18.923500702028083
+  },
+  {
+    "horizonte_h": 6,
+    "modelo": "Programacion semanal",
+    "n": 1282,
+    "mae_mw": 118.15185703588143,
+    "rmse_mw": 144.62868391180967,
+    "mape_pct": 1.555101008341459,
+    "bias_mw": -50.09525585023397
+  },
+  {
+    "horizonte_h": 6,
+    "modelo": "Persistencia D-1",
+    "n": 1282,
+    "mae_mw": 240.67874074102963,
+    "rmse_mw": 375.56552944447265,
+    "mape_pct": 3.2388789604779635,
+    "bias_mw": 13.24812198907956
+  },
+  {
+    "horizonte_h": 12,
+    "modelo": "Ridge residual",
+    "n": 1282,
+    "mae_mw": 90.34612017574743,
+    "rmse_mw": 112.58770340930386,
+    "mape_pct": 1.1995654281117394,
+    "bias_mw": 1.6343179187728007
+  },
+  {
+    "horizonte_h": 12,
+    "modelo": "Programacion diaria",
+    "n": 1282,
+    "mae_mw": 95.24536828393136,
+    "rmse_mw": 118.80132917763467,
+    "mape_pct": 1.2659907823262315,
+    "bias_mw": 18.923500702028083
+  },
+  {
+    "horizonte_h": 12,
+    "modelo": "Programacion semanal",
+    "n": 1282,
+    "mae_mw": 118.15185703588143,
+    "rmse_mw": 144.62868391180967,
+    "mape_pct": 1.555101008341459,
+    "bias_mw": -50.09525585023397
+  },
+  {
+    "horizonte_h": 12,
+    "modelo": "Persistencia D-1",
+    "n": 1282,
+    "mae_mw": 240.67874074102963,
+    "rmse_mw": 375.56552944447265,
+    "mape_pct": 3.2388789604779635,
+    "bias_mw": 13.24812198907956
+  },
+  {
+    "horizonte_h": 24,
+    "modelo": "Ridge residual",
+    "n": 1282,
+    "mae_mw": 88.65128467981185,
+    "rmse_mw": 108.51527921254447,
+    "mape_pct": 1.1753911026166626,
+    "bias_mw": -5.238880670181509
+  },
+  {
+    "horizonte_h": 24,
+    "modelo": "Programacion diaria",
+    "n": 1282,
+    "mae_mw": 95.24536828393136,
+    "rmse_mw": 118.80132917763467,
+    "mape_pct": 1.2659907823262315,
+    "bias_mw": 18.923500702028083
+  },
+  {
+    "horizonte_h": 24,
+    "modelo": "Programacion semanal",
+    "n": 1282,
+    "mae_mw": 118.15185703588143,
+    "rmse_mw": 144.62868391180967,
+    "mape_pct": 1.555101008341459,
+    "bias_mw": -50.09525585023397
+  },
+  {
+    "horizonte_h": 24,
+    "modelo": "Persistencia D-1",
+    "n": 1282,
+    "mae_mw": 240.67874074102963,
+    "rmse_mw": 375.56552944447265,
+    "mape_pct": 3.2388789604779635,
+    "bias_mw": 13.24812198907956
+  }
+]

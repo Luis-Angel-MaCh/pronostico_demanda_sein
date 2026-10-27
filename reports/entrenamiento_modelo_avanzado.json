@@ -1,0 +1,342 @@
+{
+  "generatedAt": "2026-10-27T10:49:34.509994-05:00",
+  "trainedThrough": "2026-10-27T10:30:00",
+  "models": [
+    {
+      "horizonSteps": 1,
+      "hours": 0.5,
+      "model": "HistGradientBoosting",
+      "windowDays": 730,
+      "rows": 33304
+    },
+    {
+      "horizonSteps": 2,
+      "hours": 1.0,
+      "model": "Ridge",
+      "windowDays": 180,
+      "rows": 7256
+    },
+    {
+      "horizonSteps": 3,
+      "hours": 1.5,
+      "model": "Ridge",
+      "windowDays": 180,
+      "rows": 7255
+    },
+    {
+      "horizonSteps": 4,
+      "hours": 2.0,
+      "model": "Ridge",
+      "windowDays": 180,
+      "rows": 7254
+    },
+    {
+      "horizonSteps": 5,
+      "hours": 2.5,
+      "model": "Ridge",
+      "windowDays": 730,
+      "rows": 33199
+    },
+    {
+      "horizonSteps": 6,
+      "hours": 3.0,
+      "model": "Ridge",
+      "windowDays": 730,
+      "rows": 33179
+    },
+    {
+      "horizonSteps": 7,
+      "hours": 3.5,
+      "model": "Ridge",
+      "windowDays": 730,
+      "rows": 33159
+    },
+    {
+      "horizonSteps": 8,
+      "hours": 4.0,
+      "model": "Ridge",
+      "windowDays": 730,
+      "rows": 33147
+    },
+    {
+      "horizonSteps": 9,
+      "hours": 4.5,
+      "model": "Ridge",
+      "windowDays": 730,
+      "rows": 33136
+    },
+    {
+      "horizonSteps": 10,
+      "hours": 5.0,
+      "model": "Ridge",
+      "windowDays": 730,
+      "rows": 33127
+    },
+    {
+      "horizonSteps": 11,
+      "hours": 5.5,
+      "model": "Ridge",
+      "windowDays": 730,
+      "rows": 33119
+    },
+    {
+      "horizonSteps": 12,
+      "hours": 6.0,
+      "model": "Ridge",
+      "windowDays": 730,
+      "rows": 33111
+    },
+    {
+      "horizonSteps": 13,
+      "hours": 6.5,
+      "model": "Ridge",
+      "windowDays": 365,
+      "rows": 16054
+    },
+    {
+      "horizonSteps": 14,
+      "hours": 7.0,
+      "model": "Ridge",
+      "windowDays": 365,
+      "rows": 16052
+    },
+    {
+      "horizonSteps": 15,
+      "hours": 7.5,
+      "model": "Ridge",
+      "windowDays": 365,
+      "rows": 16051
+    },
+    {
+      "horizonSteps": 16,
+      "hours": 8.0,
+      "model": "Ridge",
+      "windowDays": 365,
+      "rows": 16050
+    },
+    {
+      "horizonSteps": 17,
+      "hours": 8.5,
+      "model": "Ridge",
+      "windowDays": 365,
+      "rows": 16049
+    },
+    {
+      "horizonSteps": 18,
+      "hours": 9.0,
+      "model": "Ridge",
+      "windowDays": 365,
+      "rows": 16047
+    },
+    {
+      "horizonSteps": 19,
+      "hours": 9.5,
+      "model": "Ridge",
+      "windowDays": 365,
+      "rows": 16045
+    },
+    {
+      "horizonSteps": 20,
+      "hours": 10.0,
+      "model": "Ridge",
+      "windowDays": 365,
+      "rows": 16043
+    },
+    {
+      "horizonSteps": 21,
+      "hours": 10.5,
+      "model": "Ridge",
+      "windowDays": 365,
+      "rows": 16042
+    },
+    {
+      "horizonSteps": 22,
+      "hours": 11.0,
+      "model": "Ridge",
+      "windowDays": 365,
+      "rows": 16041
+    },
+    {
+      "horizonSteps": 23,
+      "hours": 11.5,
+      "model": "Ridge",
+      "windowDays": 365,
+      "rows": 16040
+    },
+    {
+      "horizonSteps": 24,
+      "hours": 12.0,
+      "model": "Ridge",
+      "windowDays": 365,
+      "rows": 16040
+    },
+    {
+      "horizonSteps": 25,
+      "hours": 12.5,
+      "model": "Ridge",
+      "windowDays": 365,
+      "rows": 16040
+    },
+    {
+      "horizonSteps": 26,
+      "hours": 13.0,
+      "model": "Ridge",
+      "windowDays": 365,
+      "rows": 16040
+    },
+    {
+      "horizonSteps": 27,
+      "hours": 13.5,
+      "model": "Ridge",
+      "windowDays": 365,
+      "rows": 16040
+    },
+    {
+      "horizonSteps": 28,
+      "hours": 14.0,
+      "model": "Ridge",
+      "windowDays": 365,
+      "rows": 16040
+    },
+    {
+      "horizonSteps": 29,
+      "hours": 14.5,
+      "model": "Ridge",
+      "windowDays": 365,
+      "rows": 16040
+    },
+    {
+      "horizonSteps": 30,
+      "hours": 15.0,
+      "model": "Ridge",
+      "windowDays": 365,
+      "rows": 16040
+    },
+    {
+      "horizonSteps": 31,
+      "hours": 15.5,
+      "model": "Ridge",
+      "windowDays": 365,
+      "rows": 16040
+    },
+    {
+      "horizonSteps": 32,
+      "hours": 16.0,
+      "model": "Ridge",
+      "windowDays": 365,
+      "rows": 16040
+    },
+    {
+      "horizonSteps": 33,
+      "hours": 16.5,
+      "model": "Ridge",
+      "windowDays": 365,
+      "rows": 16040
+    },
+    {
+      "horizonSteps": 34,
+      "hours": 17.0,
+      "model": "Ridge",
+      "windowDays": 365,
+      "rows": 16040
+    },
+    {
+      "horizonSteps": 35,
+      "hours": 17.5,
+      "model": "Ridge",
+      "windowDays": 365,
+      "rows": 16041
+    },
+    {
+      "horizonSteps": 36,
+      "hours": 18.0,
+      "model": "Ridge",
+      "windowDays": 365,
+      "rows": 16042
+    },
+    {
+      "horizonSteps": 37,
+      "hours": 18.5,
+      "model": "Ridge",
+      "windowDays": 365,
+      "rows": 16043
+    },
+    {
+      "horizonSteps": 38,
+      "hours": 19.0,
+      "model": "Ridge",
+      "windowDays": 365,
+      "rows": 16044
+    },
+    {
+      "horizonSteps": 39,
+      "hours": 19.5,
+      "model": "Ridge",
+      "windowDays": 365,
+      "rows": 16045
+    },
+    {
+      "horizonSteps": 40,
+      "hours": 20.0,
+      "model": "Ridge",
+      "windowDays": 365,
+      "rows": 16046
+    },
+    {
+      "horizonSteps": 41,
+      "hours": 20.5,
+      "model": "Ridge",
+      "windowDays": 365,
+      "rows": 16047
+    },
+    {
+      "horizonSteps": 42,
+      "hours": 21.0,
+      "model": "Ridge",
+      "windowDays": 365,
+      "rows": 16049
+    },
+    {
+      "horizonSteps": 43,
+      "hours": 21.5,
+      "model": "Ridge",
+      "windowDays": 365,
+      "rows": 16048
+    },
+    {
+      "horizonSteps": 44,
+      "hours": 22.0,
+      "model": "Ridge",
+      "windowDays": 365,
+      "rows": 16048
+    },
+    {
+      "horizonSteps": 45,
+      "hours": 22.5,
+      "model": "Ridge",
+      "windowDays": 365,
+      "rows": 16048
+    },
+    {
+      "horizonSteps": 46,
+      "hours": 23.0,
+      "model": "Ridge",
+      "windowDays": 365,
+      "rows": 16049
+    },
+    {
+      "horizonSteps": 47,
+      "hours": 23.5,
+      "model": "Ridge",
+      "windowDays": 365,
+      "rows": 16049
+    },
+    {
+      "horizonSteps": 48,
+      "hours": 24.0,
+      "model": "Ridge",
+      "windowDays": 365,
+      "rows": 16049
+    }
+  ]
+}

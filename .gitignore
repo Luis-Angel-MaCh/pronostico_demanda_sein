@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+deliverables/qa/
+.codex-finalizer/
+.chart-data-*/
+MATERIAL/
+*.tmp
+data/monitor/*.sqlite-shm
+data/monitor/*.sqlite-wal
+

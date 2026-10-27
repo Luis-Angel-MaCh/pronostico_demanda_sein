@@ -1,0 +1,13 @@
+{
+  "rows_raw": 48048,
+  "rows_final": 48048,
+  "duplicates_resolved": 0,
+  "date_start": "2024-01-01T00:30:00",
+  "date_end": "2026-09-28T00:00:00",
+  "missing": {
+    "fecha": 0,
+    "ejecutado": 14,
+    "prog_diaria": 0,
+    "prog_semanal": 0
+  }
+}

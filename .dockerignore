@@ -1,0 +1,8 @@
+MATERIAL
+__pycache__
+*.pyc
+.git
+.venv
+data/monitor/*.sqlite-shm
+data/monitor/*.sqlite-wal
+

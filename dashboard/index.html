@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Monitoreo local de demanda eléctrica y pronósticos del SEIN.">
+  <title>LDS · Centro de Pronóstico</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23081117'/%3E%3Cpath d='M13 43V22h7v15h11v6H13zm22 0V22h9c10 0 15 4 15 10.5S54 43 44 43h-9zm7-6h3c4.5 0 7-1.3 7-4.5S49.5 28 45 28h-3v9z' fill='%2335d6b5'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+  <main class="shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">LDS</div>
+        <div>
+          <p class="eyebrow">SISTEMA ELÉCTRICO INTERCONECTADO NACIONAL</p>
+          <h1>Centro de Pronóstico</h1>
+        </div>
+      </div>
+      <div class="top-actions">
+        <div class="live-state" id="liveState"><span></span><strong>Conectando</strong></div>
+        <div class="clock-block">
+          <span id="todayLabel">Hoy</span>
+          <strong id="clock">--:--:--</strong>
+        </div>
+        <button class="refresh-button" id="refreshButton" type="button" aria-label="Actualizar datos">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11a8 8 0 1 0-2.34 5.66M20 5v6h-6"/></svg>
+          Actualizar
+        </button>
+      </div>
+    </header>
+
+    <section class="metric-grid" aria-label="Resumen operativo">
+      <article class="metric-card hero-metric">
+        <div class="metric-head"><span>Demanda actual</span><span class="tag">EJECUTADO</span></div>
+        <div class="metric-value"><strong id="currentDemand">—</strong><span>MW</span></div>
+        <p id="currentDemandMeta">Esperando el último intervalo publicado</p>
+        <div class="spark" id="currentSpark"></div>
+      </article>
+      <article class="metric-card">
+        <div class="metric-head"><span>Pico previsto</span><span class="tag tag-mint">24 H</span></div>
+        <div class="metric-value small"><strong id="peakForecast">—</strong><span>MW</span></div>
+        <p id="peakForecastMeta">Predicción LDS</p>
+      </article>
+      <article class="metric-card">
+        <div class="metric-head"><span>MAE de validación</span><span class="tag tag-blue">6 H</span></div>
+        <div class="metric-value small"><strong id="modelMae">—</strong><span>MW MAE</span></div>
+        <p id="modelMaeMeta">Backtest temporal de los últimos 30 días</p>
+      </article>
+      <article class="metric-card">
+        <div class="metric-head"><span>Revisiones detectadas</span><span class="tag tag-amber">COES</span></div>
+        <div class="metric-value small"><strong id="revisionCount">—</strong><span>hoy</span></div>
+        <p id="revisionMeta">Cambios de valores publicados</p>
+      </article>
+    </section>
+
+    <section class="workspace">
+      <article class="panel chart-panel">
+        <div class="panel-header chart-header">
+          <div>
+            <p class="eyebrow">CURVA DE CARGA · INTERVALOS DE 30 MINUTOS</p>
+            <h2>Demanda y pronósticos de hoy</h2>
+          </div>
+          <div class="chart-controls" role="group" aria-label="Series visibles">
+            <button class="legend-chip active" data-series="executed"><i style="--color:#f2f7fa"></i>Ejecutado</button>
+            <button class="legend-chip active" data-series="lds"><i style="--color:#35d6b5"></i>Predicción LDS</button>
+            <button class="legend-chip active" data-series="rdo"><i style="--color:#ffb55f"></i>Reprogramación</button>
+            <button class="legend-chip" data-series="daily"><i style="--color:#55a7ff"></i>Prog. diaria</button>
+            <button class="legend-chip" data-series="weekly"><i style="--color:#8f83ff"></i>Prog. semanal</button>
+          </div>
+        </div>
+        <div class="chart-wrap" id="chartWrap">
+          <div class="chart-loading" id="chartLoading"><span></span>Cargando curva operativa…</div>
+          <svg id="demandChart" viewBox="0 0 1100 470" role="img" aria-label="Gráfico de demanda eléctrica del día"></svg>
+          <div class="chart-tooltip" id="chartTooltip" hidden></div>
+        </div>
+        <footer class="chart-footer">
+          <span id="coverageLabel">Cobertura —</span>
+          <span id="freshnessLabel">Última lectura —</span>
+        </footer>
+      </article>
+
+      <aside class="side-stack">
+        <article class="panel horizons-panel">
+          <div class="panel-header">
+            <div><p class="eyebrow">PANORAMA</p><h2>Próximos horizontes</h2></div>
+          </div>
+          <div id="horizonCards" class="horizon-list"></div>
+        </article>
+        <article class="panel confidence-panel">
+          <div class="panel-header">
+            <div><p class="eyebrow">SELECCIÓN DINÁMICA</p><h2>Fuente campeona</h2></div>
+          </div>
+          <div id="weightBars" class="weight-list"></div>
+          <p class="panel-note">LDS utiliza la fuente con menor error validado. Solo aplica una corrección cuando mejora resultados emitidos antes del intervalo.</p>
+        </article>
+      </aside>
+    </section>
+
+    <section class="lower-grid">
+      <article class="panel revision-panel">
+        <div class="panel-header">
+          <div><p class="eyebrow">TRAZABILIDAD</p><h2>Últimas modificaciones</h2></div>
+          <span class="panel-status" id="monitorStatus">Monitor local</span>
+        </div>
+        <div class="revision-table-wrap">
+          <table>
+            <thead><tr><th>Detectado</th><th>Intervalo</th><th>Serie</th><th>Anterior</th><th>Nuevo</th><th>Cambio</th></tr></thead>
+            <tbody id="revisionRows"><tr><td colspan="6" class="empty">Aún no se detectaron modificaciones.</td></tr></tbody>
+          </table>
+        </div>
+      </article>
+      <article class="panel source-panel">
+        <div class="panel-header"><div><p class="eyebrow">ESTADO</p><h2>Calidad de la señal</h2></div></div>
+        <dl class="source-list">
+          <div><dt>Intervalos ejecutados</dt><dd id="executedIntervals">—</dd></div>
+          <div><dt>Última observación</dt><dd id="lastObservation">—</dd></div>
+          <div><dt>Próxima actualización</dt><dd>≤ 5 min</dd></div>
+          <div><dt>Modelo activo</dt><dd><span class="model-dot"></span>LDS campeón + online v1.1</dd></div>
+        </dl>
+        <div class="notice" id="dataNotice">Preparando el modelo con todos los datos confirmados hasta ahora.</div>
+      </article>
+    </section>
+  </main>
+  <script src="/app.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+{
+  "testMonth": "2026-08",
+  "winners": {
+    "1": {
+      "model": "HistGradientBoosting",
+      "windowDays": 730
+    },
+    "2": {
+      "model": "Ridge",
+      "windowDays": 180
+    },
+    "4": {
+      "model": "Ridge",
+      "windowDays": 180
+    },
+    "6": {
+      "model": "Ridge",
+      "windowDays": 730
+    },
+    "12": {
+      "model": "Ridge",
+      "windowDays": 730
+    },
+    "24": {
+      "model": "Ridge",
+      "windowDays": 365
+    },
+    "48": {
+      "model": "Ridge",
+      "windowDays": 365
+    }
+  },
+  "results": [
+    {
+      "horizonte_h": 0.5,
+      "modelo": "HistGradientBoosting",
+      "ventana_dias": 730,
+      "n_validacion": 1488,
+      "mae_validacion_mw": 55.31038059086713,
+      "n_prueba": 1488,
+      "mae_rdo_mw": 86.33871032258065,
+      "mae_modelo_mw": 52.26292067016327,
+      "mae_diaria_mw": 115.25693481182793,
+      "mejora_vs_rdo_pct": 39.467568516025594,
+      "gana_rdo_pct": 70.02688172043011
+    },
+    {
+      "horizonte_h": 1.0,
+      "modelo": "Ridge",
+      "ventana_dias": 180,
+      "n_validacion": 1488,
+      "mae_validacion_mw": 68.74519425108389,
+      "n_prueba": 1488,
+      "mae_rdo_mw": 86.33871032258065,
+      "mae_modelo_mw": 64.90417289431345,
+      "mae_diaria_mw": 115.25693481182793,
+      "mejora_vs_rdo_pct": 24.82610331817906,
+      "gana_rdo_pct": 61.96236559139785
+    },
+    {
+      "horizonte_h": 2.0,
+      "modelo": "Ridge",
+      "ventana_dias": 180,
+      "n_validacion": 1488,
+      "mae_validacion_mw": 76.66647937323403,
+      "n_prueba": 1488,
+      "mae_rdo_mw": 86.33871032258065,
+      "mae_modelo_mw": 73.86000536248564,
+      "mae_diaria_mw": 115.25693481182793,
+      "mejora_vs_rdo_pct": 14.4531982392044,
+      "gana_rdo_pct": 56.78763440860215
+    },
+    {
+      "horizonte_h": 3.0,
+      "modelo": "Ridge",
+      "ventana_dias": 730,
+      "n_validacion": 1488,
+      "mae_validacion_mw": 80.76646907075234,
+      "n_prueba": 1488,
+      "mae_rdo_mw": 86.33871032258065,
+      "mae_modelo_mw": 79.29730750443743,
+      "mae_diaria_mw": 115.25693481182793,
+      "mejora_vs_rdo_pct": 8.155557098125483,
+      "gana_rdo_pct": 53.897849462365585
+    },
+    {
+      "horizonte_h": 6.0,
+      "modelo": "Ridge",
+      "ventana_dias": 730,
+      "n_validacion": 1488,
+      "mae_validacion_mw": 82.69828081503917,
+      "n_prueba": 1488,
+      "mae_rdo_mw": 86.33871032258065,
+      "mae_modelo_mw": 83.13241328748629,
+      "mae_diaria_mw": 115.25693481182793,
+      "mejora_vs_rdo_pct": 3.713626278542876,
+      "gana_rdo_pct": 52.284946236559136
+    },
+    {
+      "horizonte_h": 12.0,
+      "modelo": "Ridge",
+      "ventana_dias": 365,
+      "n_validacion": 1488,
+      "mae_validacion_mw": 85.66311211701772,
+      "n_prueba": 1488,
+      "mae_rdo_mw": 86.33871032258065,
+      "mae_modelo_mw": 80.82261988496914,
+      "mae_diaria_mw": 115.25693481182793,
+      "mejora_vs_rdo_pct": 6.388896031689803,
+      "gana_rdo_pct": 55.51075268817204
+    },
+    {
+      "horizonte_h": 24.0,
+      "modelo": "Ridge",
+      "ventana_dias": 365,
+      "n_validacion": 1488,
+      "mae_validacion_mw": 87.06153691167421,
+      "n_prueba": 1488,
+      "mae_rdo_mw": 86.33871032258065,
+      "mae_modelo_mw": 82.86154495075442,
+      "mae_diaria_mw": 115.25693481182793,
+      "mejora_vs_rdo_pct": 4.027353847231175,
+      "gana_rdo_pct": 53.56182795698925
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "generado_en": "2026-09-27T17:32:04.293108-05:00",
+  "inicio": "2026-09-01",
+  "fin": "2026-09-27",
+  "intervalos_con_ejecutado_y_ambos_pronosticos": 1282,
+  "intervalos_donde_reprogramacion_gana_pct": 55.85023400936038,
+  "intervalos_modificados_por_reprogramacion": 1262,
+  "cambio_absoluto_mediano_mw": 35.60065999999915,
+  "cambio_absoluto_p95_mw": 151.33967549999943,
+  "advertencia": "La API histórica no entrega timestamp de publicación ni todas las versiones. La reprogramación descargada puede ser la última del día y no debe usarse como si hubiera estado disponible a las 00:00."
+}
